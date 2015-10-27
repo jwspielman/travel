@@ -13,6 +13,14 @@
 
 <% @country_images.each do |picture| %>
 <p>
-<%= image_tag picture, alt: "different countries" %>
+<%= image_tag picture, alt: "different countries", class: "img-responsive" %>
 </p>
 <% end %>
+
+<p>
+	<%= link_to "About Us", about_path(color: "blue", size: 13, class: "btn btn-info") %> 
+</p>
+
+<p>
+<%= link_to "Contact Us", contact_path %>
+</p>
